@@ -12,6 +12,7 @@ def reset_axes(ax,minx,maxx,miny,maxy):
     plt.cla()
     ax.set_xlim([minx, maxx])
     ax.set_ylim([miny, maxy])
+    ax.set_axis_bgcolor('black')
 
 def gpuInfoList():
     pynvml.nvmlInit()
